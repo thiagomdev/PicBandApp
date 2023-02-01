@@ -1,9 +1,10 @@
 import UIKit
 
 final class LoginViewController: UIViewController {
-    
+    // MARK: Properties
     private let viewModel: LoginViewModel
     
+    // MARK: Components
     private lazy var logoImageView: UIImageView = {
         let logoImage = UIImageView()
         logoImage.image = UIImage(named: "singer2")
@@ -50,11 +51,12 @@ final class LoginViewController: UIViewController {
     
     private lazy var registerButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("register now", for: .normal)
+        button.setTitle("Register now", for: .normal)
         button.addTarget(self, action: #selector(didTapLoginButton), for: .touchUpInside)
         return button
     }()
     
+    // MARK: Initializers
     init(viewModel: LoginViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
@@ -65,17 +67,20 @@ final class LoginViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // MARK: Life Cicle
     override func viewDidLoad() {
         super.viewDidLoad()
         buildSetup()
     }
     
+    // MARK: Selectors
     @objc
     private func didTapLoginButton() {
         viewModel.openRegisterView()
     }
 }
 
+// MARK: Extensions
 extension LoginViewController: LoginViewModelProtocol {
     func displayRegisterView() {
         let register = RegisterViewController()
