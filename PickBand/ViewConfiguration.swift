@@ -2,15 +2,15 @@ import Foundation
 
 protocol ViewConfiguration: AnyObject {
     func buildHierarchyView()
-    func activeConstraints()
+    func setupConstraints()
     func configureUI()
-    func buildSetup()
+    func setup()
 }
 
 extension ViewConfiguration {
-    func buildSetup() {
+    func setup() {
         buildHierarchyView()
-        activeConstraints()
+        setupConstraints()
         configureUI()
     }
 }

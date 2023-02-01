@@ -70,7 +70,7 @@ final class LoginViewController: UIViewController {
     // MARK: Life Cicle
     override func viewDidLoad() {
         super.viewDidLoad()
-        buildSetup()
+        setup()
     }
     
     // MARK: Selectors
@@ -99,7 +99,7 @@ extension LoginViewController: ViewConfiguration {
         view.add(views: logoImageView, stackView, registerButton)
     }
     
-    func activeConstraints() {
+    func setupConstraints() {
         NSLayoutConstraint.activateConstraints([
             logoImageView.topAnchor.constraint(equalToSystemSpacingBelow: view.safeAreaLayoutGuide.topAnchor, multiplier: 1),
             logoImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
