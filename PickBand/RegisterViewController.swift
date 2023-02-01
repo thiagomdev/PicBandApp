@@ -1,7 +1,7 @@
 import UIKit
 
 final class RegisterViewController: UIViewController {
-    
+    // MARK: Components
     private lazy var logoImageView: UIImageView = {
         let logoImage = UIImageView()
         logoImage.image = UIImage(named: "singer2")
@@ -61,18 +61,20 @@ final class RegisterViewController: UIViewController {
         return button
     }()
     
-
+    // MARK: Life Cicle
     override func viewDidLoad() {
         super.viewDidLoad()
         buildSetup()
     }
     
+    // MARK: Selectors
     @objc
     private func backToSignInButton() {
         dismiss(animated: true)
     }
 }
 
+// MARK: Extensions
 extension RegisterViewController: ViewConfiguration {
     func buildHierarchyView() {
         stackView.add(

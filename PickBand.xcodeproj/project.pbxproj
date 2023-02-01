@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA0A7544298A981E005D421E /* NSLayoutConstraint+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0A7543298A981E005D421E /* NSLayoutConstraint+Extension.swift */; };
 		AA763EA329896F7500667E41 /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA763EA229896F7500667E41 /* UIStackView+Extension.swift */; };
 		AA763EA529896F8000667E41 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA763EA429896F8000667E41 /* UIView+Extension.swift */; };
 		AA9BE4D9298881EA0031BBFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9BE4D8298881EA0031BBFE /* AppDelegate.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA0A7543298A981E005D421E /* NSLayoutConstraint+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Extension.swift"; sourceTree = "<group>"; };
 		AA763EA229896F7500667E41 /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
 		AA763EA429896F8000667E41 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		AA9BE4D5298881EA0031BBFE /* PickBand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickBand.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +99,7 @@
 				AA763EA429896F8000667E41 /* UIView+Extension.swift */,
 				AA9BE4EF298882BD0031BBFE /* ViewConfiguration.swift */,
 				AA763EA229896F7500667E41 /* UIStackView+Extension.swift */,
+				AA0A7543298A981E005D421E /* NSLayoutConstraint+Extension.swift */,
 			);
 			name = Shared;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				AA9BE4F0298882BD0031BBFE /* ViewConfiguration.swift in Sources */,
 				AA763EA329896F7500667E41 /* UIStackView+Extension.swift in Sources */,
 				AAE007BD2989926500CAD6AB /* RegisterViewModel.swift in Sources */,
+				AA0A7544298A981E005D421E /* NSLayoutConstraint+Extension.swift in Sources */,
 				AA9BE4DD298881EA0031BBFE /* LoginViewController.swift in Sources */,
 				AAE007BF2989929300CAD6AB /* LoginViewModel.swift in Sources */,
 				AAE007BB2989920E00CAD6AB /* RegisterViewController.swift in Sources */,
